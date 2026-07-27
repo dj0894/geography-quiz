@@ -1,6 +1,6 @@
 # GeoQuest Kids
 
-An iPad-optimized geography quiz game for children. It includes Easy, Medium, and Hard quiz levels, Learn Mode, saved progress, and an interactive map shown after wrong answers.
+An iPad-optimized geography quiz game for children with all 195 countries (193 UN members plus Palestine and Vatican City). It includes Easy, Medium, and Hard quiz levels, Learn Mode, saved progress, and an interactive map shown after wrong answers.
 
 ## Run locally
 

@@ -125,7 +125,8 @@ function checkTypedAnswer(answer) {
   if (state.answered || !answer.trim()) return;
   state.answered = true;
   const q = state.questions[state.index];
-  const correct = normalize(answer) === normalize(q.capital);
+  const acceptedAnswers = [q.capital, ...(q.aliases || [])];
+  const correct = acceptedAnswers.some(value => normalize(answer) === normalize(value));
   answerArea.querySelectorAll('input,button').forEach(el => el.disabled = true);
   correct ? handleCorrect() : handleWrong();
 }
